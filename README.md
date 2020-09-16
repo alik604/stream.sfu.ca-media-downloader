@@ -11,8 +11,9 @@ javascript:const file=window.location.pathname.split("/")[3];fetch("https://stre
 ## Installation
 
 1. Copy the `Bookmarklet`
-2. In your browser create a bookmark to the current page
-3. Edit the said bookmark's URL property/attribute, paste in the contents of the bookmarklet. 📌 (replacing the original URL) 
+2. In your browser create a bookmark to the current page. Doen't matter what said page is. 
+3. Edit the said bookmark's URL property/attribute, paste in the contents of the bookmarklet. 📌
+   * Replacing the original URL. `CTRL + d`, `More..`, Pasting in the `Bookmarklet`   
 4. Go to the lecture, click the title to view at the webpage that has the URL `stream.sfu.ca/Media/Play/*`, rather than  `canvas.sfu.ca/courses/*/modules/items/*`. 
 Note: if there is no title, the should be a button on the bottom right for a pop-up. Looks like a little box with a arrow pointing top-right
 5. Click the `Bookmarklet`
