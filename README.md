@@ -24,6 +24,7 @@ Enjoy 😇
 
 
 ### Click here: 
+> Or the pop-out button on the bottom-right corner 
 
 <img src="https://github.com/alik604/stream.sfu.ca-media-downloader/blob/master/images/first_Image.jpg" width="1100" class="inline" >
 
