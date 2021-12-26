@@ -19,7 +19,7 @@ Note: if there is no title, the should be a button on the bottom right for a pop
 5. Click the `Bookmarklet`
     * Be sure to allow popups
 6. On the new tab, right-click, save-as, ... 🤯 
-
+7. [optiona] run something akin to `for i in *.mp4; do ffmpeg -i "$i" -vcodec libx265 -crf 30 "$i_.mp4"; done` to use `ffmpeg` to compress for long term storage, after you have many files to compress. See the docs for `-crf 30`. see this [site](https://explainshell.com/explain?cmd=ffmpeg+-i+%22%24i%22+-vcodec+libx265+-crf+30+%22%24i_.mp4%22)
 Enjoy 😇
 
 
