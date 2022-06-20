@@ -22,10 +22,17 @@ fetch("https://stream.sfu.ca/Media/PlayerService/PlayerService.svc/json/GetPlaye
 })
 	.then(response => response.json())
 	.then(function (data) {
-		const url = data["d"]["Presentation"]["Streams"]["0"]["VideoUrls"]["0"]["Location"];
-		if (url == null) throw {};
-		window.open(url);
+		for (const stream of data['d']['Presentation']['Streams']) {
+			for (const url of stream['VideoUrls']) {
+				if (url['Location'] != null) {
+					window.open(url['Location']);
+					return;
+				}
+			}
+		}
+
+		alert("Unable to find video URL.");
 	})
 	.catch(error => {
-		alert("Unable to get the video URL.");
+		alert("Unable to find the video URL due to error.");
 	});
