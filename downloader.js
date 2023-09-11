@@ -24,6 +24,7 @@ fetch("https://stream.sfu.ca/Media/PlayerService/PlayerService.svc/json/GetPlaye
 	.then(function (data) {
 		for (const stream of data['d']['Presentation']['Streams']) {
 			for (const url of stream['VideoUrls']) {
+				if (url['MimeType'] != null && url['MimeType'].includes("x-mpegurl")) continue; // Ignore playlists.
 				if (url['Location'] != null) {
 					window.open(url['Location']);
 					return;
